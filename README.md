@@ -1,4 +1,4 @@
-# ipiranga-confraria-cms
+# default-vuex-project
 
 > A Vue.js project
 
