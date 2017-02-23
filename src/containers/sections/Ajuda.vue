@@ -1,11 +1,41 @@
 <template>
-
+    <section class="help">
+        <div class="help-container container container-sm"></div>
+        <div class="card card-auto-height pd-40-vertical pd-40-horizontal card-white card-shadow">
+            <div class="card-body">
+                <div class="card-content">
+                    <ul class="faq-questions">
+                        <faq-accordion v-for="item in items" :question="item"></faq-accordion>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
-    export default {
+  import FaqAccordion from 'components/FaqAccordion'
+  export default {
+    components: {FaqAccordion},
 
+    name: 'ajuda',
+    data () {
+      return {
+        items: [
+          {
+            title: 'Pergunta numero 1',
+            answer: 'Resposta da pergunta numero 1'
+          },
+          {
+            title: 'Pergunta numero 1',
+            answer: 'Resposta da pergunta numero 1'
+          },
+          {
+            title: 'Pergunta numero 1',
+            answer: 'Resposta da pergunta numero 1'
+          }
+        ]
+      }
     }
-
+  }
 </script>
-

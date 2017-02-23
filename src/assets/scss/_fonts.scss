@@ -1,14 +1,20 @@
-//@font-face {
-//  font-family: 'officinaSerif';
-//  src: url('./assets/fonts/officinaserif-book-webfont.woff');
-//}
-//
-//@font-face {
-//  font-family: 'officinaSerifBold';
-//  src: url('./assets/fonts/officinaserif-bold-webfont.woff') format('woff');
-//  font-weight: bold;
-//}
-//
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('./assets/fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SourceSansProBold';
+  src: url('./assets/fonts/SourceSansPro-Bold.ttf') format('ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'SourceSansProBold';
+  src: url('./assets/fonts/SourceSansPro-Light.ttf') format('ttf');
+  font-weight: lighter;
+}
+
 //@font-face {
 //  font-family: 'trebuchet_msregular';
 //  src: url('./assets/fonts/trebuc.woff') format('woff');

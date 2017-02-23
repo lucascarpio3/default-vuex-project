@@ -1,0 +1,84 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+.card-body {
+  display: table;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4em;
+  line-height: 1.42857;
+
+}
+.text-wrap {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.faq-questions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-item {
+
+  .accordion-title {
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    &.open {
+      border-bottom-color: #D02045;
+    }
+
+    .action {
+      color: #D02045;
+      margin-left: auto;
+      margin-right: -1px;
+      &.open {
+
+      }
+    }
+  }
+  .accordion-content {
+    display: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #9D9D99;
+    &.open {
+      display: block;
+    }
+  }
+}
+
+
+
+
