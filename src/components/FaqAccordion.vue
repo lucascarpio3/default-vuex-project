@@ -2,8 +2,12 @@
     <li @click="toggleAccordion" class="accordion-item text-wrap">
         <div :class="['accordion-title', {open: isOpen}]">
             {{question.title}}
-            <div v-if="!isOpen" :class="['action', {open: isOpen}]">+</div>
-            <div v-if="isOpen" :class="['action', {open: isOpen}]">-</div>
+            <div v-if="!isOpen" :class="['action', {open: isOpen}]">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <div v-if="isOpen" :class="['action', {open: isOpen}]">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+            </div>
         </div>
         <div :class="['accordion-content', {open: isOpen}]">
             {{question.answer}}
