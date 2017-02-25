@@ -2,6 +2,49 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+.doc-table td, .doc-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-responsive {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  min-height: .01%;
+}
+
+.table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th {
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
 li {
   text-align: -webkit-match-parent;
 }
