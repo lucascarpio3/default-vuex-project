@@ -1,0 +1,17 @@
+.btn {
+  &--flat {
+    border: none;
+  }
+
+  &-lg {
+    width: 260px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-cardinal;
+  }
+}

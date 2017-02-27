@@ -1,0 +1,43 @@
+.login {
+  background: url("assets/images/wine_bkg.png") no-repeat;
+  background-size: 100vw auto;
+  height: 100vh;
+  &-logo {
+    width: 238px;
+  }
+  &-form {
+    width: 560px;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    #username, #password {
+
+      font-family: Roboto, sans-serif;
+      font-size: 1.6rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+
+      background: none;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      transition: all 0.3s;
+      &:focus {
+        outline: none;
+        box-shadow: 0 1px 0 0 #fff;
+        transition: all 0.3s;
+      }
+    }
+
+    &-submit {
+    }
+  }
+}

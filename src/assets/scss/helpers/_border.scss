@@ -39,4 +39,10 @@
       }
     }
   }
+
+  &--white {
+    &--1 {
+      border: solid 1px $color-white;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-$gutters-sizes: "0", "2", "5", "10", "15", "20", "25", "30", "50", "70";
+$gutters-sizes: "0", "2", "5", "10", "15", "20", "25", "30", "40", "50", "70", "90";
 
 @mixin generate-margin-gutters($prefix, $direction, $sizes) {
   @each $item in $sizes {
