@@ -2,61 +2,17 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-.doc-table td, .doc-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+.doc-table {
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-.table-responsive {
-  width: 100%;
-  margin-bottom: 15px;
-  overflow-y: hidden;
-  border: 1px solid #ddd;
-  overflow-x: auto;
-  min-height: .01%;
-}
-
-.table {
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: grey;
-}
-
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-
-th {
-  font-weight: bold;
-  text-align: -internal-center;
-}
-
-td, th {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-li {
-  text-align: -webkit-match-parent;
-}
-
-ul, menu, dir {
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
+  td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
 }
 
 .card-body {
@@ -89,12 +45,13 @@ body {
 .accordion-item {
 
   .accordion-title {
-    border-bottom: 2px solid rgba(0,0,0,.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     padding: 0;
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 300;
     color: #333;
+    line-height: 40px;
     cursor: pointer;
     display: flex;
     &.open {
@@ -102,10 +59,16 @@ body {
     }
 
     .action {
-      color: #D02045;
-      margin-left: auto;
-      margin-right: -1px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #d02045;
+      font-weight: 100;
+      text-decoration: none;
       &.open {
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+        }
 
       }
     }
