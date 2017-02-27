@@ -7,12 +7,12 @@
 
 <script>
   import TopBar from 'containers/TopBar.vue'
-export default {
-  name: 'app',
-  components: {
-    TopBar
+  export default {
+    name: 'app',
+    components: {
+      TopBar
+    }
   }
-}
 </script>
 <style lang="sass">
   @import "~assets/scss/app";
