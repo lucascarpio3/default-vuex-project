@@ -1,22 +1,29 @@
 <template>
-    <li @click="toggleAccordion" class="accordion-item text-wrap">
-        <div :class="['accordion-title', {open: isOpen}]">
-            {{question.title}}
-            <div v-if="!isOpen" :class="['action', {open: isOpen}]">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <div v-if="isOpen" :class="['action', {open: isOpen}]">
-                <i class="fa fa-minus" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div :class="['accordion-content', {open: isOpen}]">
-            {{question.answer}}
-        </div>
-    </li>
+  <li @click="toggleAccordion" class="accordion-item text-wrap">
+    <div :class="['accordion-title', {open: isOpen}]">
+      {{question.title}}
+      <div v-if="!isOpen" :class="['action', {open: isOpen}]">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+      <div v-if="isOpen" :class="['action', {open: isOpen}]">
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div :class="['accordion-content', {open: isOpen}]">
+      {{question.answer}}
+      <plan-table v-if="question.table && question.table.indexOf('plans') <= 0"></plan-table>
+    </div>
+  </li>
 </template>
-
 <script>
+  import PlanTable from 'components/PlanTable'
   export default {
+    mounted () {
+      console.log(this.question)
+    },
+    components: {
+      PlanTable
+    },
     data () {
       return {
         isOpen: false

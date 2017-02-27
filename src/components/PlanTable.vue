@@ -1,6 +1,5 @@
 <template>
     	  <span>
-	  	{{question.answer}}
 	  	<div class="doc-table table-responsive mg-20-top">
 	  		<table class="text-left">
 	  			<tbody>
@@ -49,10 +48,10 @@
 	  		</table>
 	  	</div>
 	  </span>
-    </div>
-    </span>
+  </div>
+  </span>
 </template>
 
 <script>
-
+  export default {}
 </script>

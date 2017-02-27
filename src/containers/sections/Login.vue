@@ -7,8 +7,9 @@
       <input id="username" name="username" type="text" class="block full-width" autocomplete="off">
       <label for="password" class="mt-40 block left">Senha</label>
       <input id="password" type="password" class="block full-width" autocomplete="off">
-      <input type="button" value="Entrar" class="bkg-white btn br-15 login-form-submit mt-40 btn--flat pd-15 btn-lg">
+      <input type="button" value="ENTRAR" class="bkg-white btn br-15 login-form-submit mt-40 btn--flat pd-15 btn-lg">
     </div>
+    <div class="login-bkg"></div>
   </div>
 
 </template>
