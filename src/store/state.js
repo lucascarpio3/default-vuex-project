@@ -23,7 +23,8 @@ export default {
     },
     {
       title: 'Quanto eu pago de mensalidade caso eu não tenha Km suficiente?',
-      answer: 'Se você não tiver saldo de Km suficiente no dia da cobrança do seu cartão de crédito, será cobrado um valor adicional, sendo certo que você pagará o valor da mensalidade sem o desconto, conforme pode ser verificado na tabela abaixo:'
+      answer: 'Se você não tiver saldo de Km suficiente no dia da cobrança do seu cartão de crédito, será cobrado um valor adicional, sendo certo que você pagará o valor da mensalidade sem o desconto, conforme pode ser verificado na tabela abaixo:',
+      table: ['plans']
     },
     {
       title: 'Como faço para acumular Km de Vantagens?',
