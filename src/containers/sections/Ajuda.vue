@@ -1,4 +1,5 @@
 <template>
+
   <section class="help">
     <div class="help-container container container-sm"></div>
     <div class="card card-auto-height pd-40-vertical pd-40-horizontal card-white card-shadow">
@@ -18,8 +19,6 @@
   import {mapState} from 'vuex'
   export default {
     components: {FaqAccordion},
-
-    name: 'ajuda',
     computed: {
       ...mapState({
         items: (state) => state.faqQuestions
