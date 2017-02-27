@@ -5,7 +5,7 @@
       <div class="card-body">
         <div class="card-content">
           <ul class="faq-questions">
-            <faq-accordion v-for="item in items" :question="item"></faq-accordion>
+            <faq-accordion v-for="item in items" :question="item" :key="item.id"></faq-accordion>
           </ul>
         </div>
       </div>
