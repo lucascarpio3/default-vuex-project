@@ -1,0 +1,26 @@
+.top-bar {
+  display: flex;
+
+  &-right {
+    width: calc(100% - 295px);
+    height: 124.2px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-left {
+    width: 295px;
+    height: 124.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: #b3113b;
+
+    .logo {
+      width: 173.4px;
+      height: 48.1px;
+      background-color: #fcd133;
+
+    }
+  }
+}
