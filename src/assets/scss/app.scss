@@ -1,11 +1,8 @@
 // LIBS & VENDORS
 @import '../vendor/fontawesome';
-
 // BASIC SETTINGS
 @import './base';
 @import './vars';
-
-
 // HELPERS
 @import './helpers/margin';
 @import './helpers/padding';
@@ -20,14 +17,12 @@
 @import './helpers/custom-grid';
 @import './helpers/width';
 @import './helpers/button';
-
-
+@import './helpers/colors';
 // COMPONENTS
 @import "./components/login";
 @import './components/faq-accordion';
 
 // SECTIONS
-
 
 // MODALS
 

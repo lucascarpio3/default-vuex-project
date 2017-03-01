@@ -47,13 +47,13 @@
   &-bkg {
     position: absolute;
     width: 560px;
-    height: 365px;
-    top: 252px;
+    height: 385px;
+    top: 232px;
     left: calc(50% - 280px);
     background: url("assets/images/wine_bkg.png") no-repeat;
     background-size: 100vw auto;
     background-position-x: 50%;
-    background-position-y: -252px;
+    background-position-y: -232px;
     -webkit-filter: blur(20px);
     filter: blur(20px);
   }
