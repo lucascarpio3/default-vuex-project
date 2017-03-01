@@ -1,18 +1,27 @@
 <template>
   <div id="app">
     <top-bar v-if="route.name !== 'login'"></top-bar>
-    <router-view></router-view>
+    <div class="container" v-if="route.name !== 'login'">
+      <faq-menu></faq-menu>
+      <div class="section">
+        <router-view></router-view>
+      </div>
+
+    </div>
+    <router-view v-if="route.name === 'login'"></router-view>
   </div>
 </template>
 
 <script>
   import TopBar from 'containers/TopBar.vue'
+  import FaqMenu from 'containers/Menu.vue'
   import {mapState} from 'vuex'
 
   export default {
     name: 'app',
     components: {
-      TopBar
+      TopBar,
+      FaqMenu
     },
     computed: {
       ...mapState({
