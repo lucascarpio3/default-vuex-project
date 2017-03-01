@@ -4,7 +4,7 @@
             <img class="logo" src="../assets/images/ipiranga_logo.png" alt="Ipiranga Confraria">
         </div>
         <div class="top-bar-right">
-            <h1 class="faq ml-30">FAQ</h1>
+            <h1 class="faq ml-30">{{titlePage}}</h1>
             <div class="logout">LOGOUT</div>
             <div class="sign-out">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
@@ -14,5 +14,12 @@
 </template>
 
 <script>
-    export default {}
+   export default {
+     props: {
+       titlePage: {
+         type: String,
+         required: true
+       }
+     }
+   }
 </script>
