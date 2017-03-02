@@ -1,7 +1,7 @@
 .btn {
   &--flat {
-    border: none;
-  }
+      border: none;
+    }
 
   &-lg {
     width: 260px;
@@ -13,4 +13,12 @@
     line-height: normal;
     letter-spacing: normal;
   }
+
+  &-default {
+    width: 160.5px;
+    height: 35px;
+
+  }
+
 }
+

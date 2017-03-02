@@ -63,7 +63,7 @@ body {
 
 .section {
   display: flex;
-  justify-content: flex;
+  width: calc(100% - 295px);
 }
 
 .container {
