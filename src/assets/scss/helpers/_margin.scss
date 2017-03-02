@@ -1,4 +1,4 @@
-$gutters-sizes: auto, "0", "2", "5", "10", "15", "20", "25", "30", "40", "50", "70", "90", "156";
+$gutters-sizes: "auto", "0", "2", "5", "10", "15", "20", "25", "30", "40", "50", "70", "90", "156";
 
 @mixin generate-margin-gutters($prefix, $direction, $sizes) {
   @each $item in $sizes {
@@ -15,7 +15,11 @@ $gutters-sizes: auto, "0", "2", "5", "10", "15", "20", "25", "30", "40", "50", "
       }
     } @else {
       .#{$prefix}-#{$item} {
-        margin-#{$direction}: #{$item}px !important;
+        @if $item == 'auto' {
+          margin-#{$direction}: auto;
+        } @else {
+          margin-#{$direction}: #{$item}px !important;
+        }
       }
     }
   }
