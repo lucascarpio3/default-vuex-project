@@ -12,7 +12,7 @@
              :class="['block', 'full-width', 'mt-2', {error: errors.password}]">
       <small class="c-carnation" v-if="errors.password">{{errors.password[0]}}</small>
       <br>
-      <input type="submit" value="ENTRAR" class="bkg-white btn br-15 login-form-submit mt-40 btn--flat pd-15 btn-lg">
+      <input type="submit" value="ENTRAR" class="bkg-white btn br-15 login-form-submit mt-40 btn--flat pd-15 btn-lg c-cardinal">
     </form>
     <div class="login-bkg"></div>
   </div>
