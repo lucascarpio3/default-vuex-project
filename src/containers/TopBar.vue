@@ -5,7 +5,7 @@
         </div>
         <div class="top-bar-right">
             <h1 class="faq ml-30">{{titlePage}}</h1>
-            <div class="logout">LOGOUT</div>
+            <div class="logout ml-auto mr-156">LOGOUT</div>
             <div class="sign-out">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
             </div>
