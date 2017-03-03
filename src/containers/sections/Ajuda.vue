@@ -2,10 +2,10 @@
   <section class="help">
     <div>
       <card title="Pergunta">
-        <textarea name="help-question" id="question" cols="55" rows="10"></textarea>
+        <textarea class="help-question" id="question" rows="10"></textarea>
       </card>
       <card title="Resposta">
-        <textarea name="help-answer" id="answer" cols="55" rows="10"></textarea>
+        <textarea class="help-answer" id="answer" rows="10"></textarea>
       </card>
     </div>
     <card title="Ajuda">

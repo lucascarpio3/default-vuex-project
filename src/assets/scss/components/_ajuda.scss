@@ -1,4 +1,10 @@
 .help {
   display: flex;
   flex-wrap: wrap;
+
+  &-question, &-answer {
+    width: 100%;
+    border: none;
+    resize: none;
+  }
 }

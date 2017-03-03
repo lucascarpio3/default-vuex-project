@@ -1,5 +1,9 @@
 .card {
   width: 450px;
+  &-title {
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+  }
   &-body {
     background-color: $color-white;
   }
