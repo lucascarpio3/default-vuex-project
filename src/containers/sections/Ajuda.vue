@@ -1,22 +1,30 @@
 <template>
   <section class="help">
-    <div class="card card-auto-height pd-40-vertical pd-40-horizontal card-white card-shadow">
-      <div class="card-body">
-        <div class="card-content">
-          <!--<ul class="faq-questions">-->
-            <!--&lt;!&ndash;<faq-accordion v-for="item in items" :question="item" :key="item.id"></faq-accordion>&ndash;&gt;-->
-          <!--</ul>-->
-        </div>
-      </div>
+    <div>
+      <card title="Pergunta">
+        <textarea name="help-question" id="question" cols="55" rows="10"></textarea>
+      </card>
+      <card title="Resposta">
+        <textarea name="help-answer" id="answer" cols="55" rows="10"></textarea>
+      </card>
     </div>
+    <card title="Ajuda">
+      <ul class="faq-questions">
+        <faq-accordion v-for="item in items" :question="item" :key="item.id"></faq-accordion>
+      </ul>
+    </card>
   </section>
 </template>
 
 <script>
   import FaqAccordion from 'components/FaqAccordion'
+  import Card from 'components/Card'
   import {mapState} from 'vuex'
   export default {
-    components: {FaqAccordion},
+    components: {
+      FaqAccordion,
+      Card
+    },
     computed: {
       ...mapState({
         items: (state) => state.faqQuestions

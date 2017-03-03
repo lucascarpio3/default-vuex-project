@@ -1,7 +1,5 @@
 .menu {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 124px);
   width: 295px;
-  background-color: #c6234e;
 }
-

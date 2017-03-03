@@ -1,5 +1,5 @@
 <template>
-    <aside class="menu">
+    <aside class="menu bkg-maroon-flush">
         <div class="imagens"></div>
         <div class="planos-frete"></div>
         <div class="faq"></div>
