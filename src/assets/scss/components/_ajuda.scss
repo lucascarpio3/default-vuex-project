@@ -1,7 +1,10 @@
 .help {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: flex-end;
+  .btn {
+    align-self: flex-end;
+  }
   &-question, &-answer {
     width: 100%;
     border: none;
