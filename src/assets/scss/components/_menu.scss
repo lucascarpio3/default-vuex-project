@@ -3,5 +3,19 @@
   height: calc(100vh - 124px);
   flex-direction: column;
   width: 295px;
+  list-style-type: none;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  &-item {
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: $color-carnation;
+    }
+    &.active {
+      background-color: $color-shiraz;
+    }
+  }
 }
 

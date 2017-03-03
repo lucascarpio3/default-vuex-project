@@ -1,14 +1,30 @@
 <template>
-  <aside class="menu pl-70 bkg-maroon-flush">
-    <h1 class="imagens pt-38 c-white">
-      <i class="fa fa-picture-o" aria-hidden="true"></i> IMAGENS</h1>
-    <h1 class="planos-frete c-white">
-      <img src="../assets/images/shape.png"> PLANOS / FRETE</h1>
-    <h1 class="faq c-white">
-      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>FAQ</h1>
-    <h1 class="regulamento c-white">
-      <i class="fa fa-file-text-o" aria-hidden="true"></i>REGULAMENTO</h1>
+  <aside class="bkg-maroon-flush">
+    <ul class="menu mt-20">
+      <li id="imagens" :class="['menu-item', 'c-white', 'pv-20', 'pl-50',{active: route.name === 'Imagens'}]">
+        <i class="fa fa-picture-o mr-10" aria-hidden="true"></i> IMAGENS
+      </li>
+      <li id="planos-frete" :class="['menu-item', 'c-white', 'pv-20', 'pl-50', {active: route.name === 'Planos / Frete'}]">
+        <img src="../assets/images/shape.png" class="mr-10"> PLANOS / FRETE
+      </li>
+      <li id="faq" :class="['menu-item', 'c-white', 'pv-20', 'pl-50',{'active': route.name === 'FAQ'}]">
+        <i class="fa fa-exclamation-triangle mr-10" aria-hidden="true"></i>FAQ
+      </li>
+      <li id="regulamento" :class="['menu-item', 'c-white', 'pv-20', 'pl-50', {active: route.name === 'Regulamento'}]">
+        <i class="fa fa-file-text-o mr-10" aria-hidden="true"></i>REGULAMENTO
+      </li>
+    </ul>
   </aside>
 </template>
 
-<script></script>
+<script>
+
+  import {mapState} from 'vuex'
+  export default {
+    computed: {
+      ...mapState({
+        route: (state) => state.route
+      })
+    }
+  }
+</script>
