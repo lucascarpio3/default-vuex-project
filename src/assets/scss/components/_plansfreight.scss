@@ -1,0 +1,34 @@
+.plan-freight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .tabs-bar {
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+
+    &-item {
+      width: 400px;
+      height: 40px;
+      border-bottom: 2.8px solid $color-maroon-flush;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-maroon-flush;
+      &.active {
+        background-color: #c6234e;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
