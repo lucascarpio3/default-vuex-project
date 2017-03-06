@@ -1,0 +1,19 @@
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .section-image-1 {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .section-image-2 {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+
+  }
+}
