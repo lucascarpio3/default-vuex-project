@@ -1,12 +1,13 @@
 <template>
   <section class="help">
-    <div>
+    <div class="flex-column">
       <card title="Pergunta">
         <textarea class="help-question" id="question" rows="10"></textarea>
       </card>
       <card title="Resposta">
         <textarea class="help-answer" id="answer" rows="10"></textarea>
       </card>
+      <button class="btn btn--flat btn-default bkg-shiraz c-white br-15 mt-30">Adicionar</button>
     </div>
     <card title="Ajuda">
       <ul class="faq-questions">
