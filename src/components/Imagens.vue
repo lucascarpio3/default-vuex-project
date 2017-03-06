@@ -1,6 +1,6 @@
 <template>
     <div class="images">
-          <div class="section-image-1">
+          <section class="plans-delivery">
         <div class="logo-site">Logo Site <br>
             <img src="/../../assets/images/logo_confraria-do-vinho"></div>
         <div class="logo-kmV">Logo KmV <br>
@@ -11,9 +11,9 @@
             <img src="/../../assets/images/4garrafas.png"></div>
         <div class="seis-garrafas">6 Garrafas <br>
             <img src="/../../assets/images/6garrafas.png"></div>
-          </div>
+          </section>
 
-        <div class="section-image-2">
+        <section class="image-products">
             <div class="explorador">Explorador <br>
                 <img src="/../../assets/images/vinhobasico1.png">
             </div>
@@ -23,7 +23,7 @@
             <div class="joias">Jóias <br>
                 <img src="/../../assets/images/vinhobasico1.png">
             </div>
-        </div>
+        </section>
     </div>
 </template>
 
