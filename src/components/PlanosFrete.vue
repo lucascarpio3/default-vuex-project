@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../assets/scss/helpers/_font-size.scss">
 <template>
     <div class="plan-freight">
         <div class="tabs-bar mt-40">
@@ -12,7 +13,6 @@
       data () {
         return {
           activated: 'planos'
-
         }
       },
       methods: {
