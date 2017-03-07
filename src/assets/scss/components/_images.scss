@@ -4,15 +4,19 @@
   justify-content: center;
 
   .plans-delivery {
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    height: 50%;
+    justify-content: center;
   }
 
   .image-products {
-    width: 50%;
     display: flex;
-    align-items: flex-end;
+  }
+
+  .tam-max {
+    display: flex;
+    align-items: flex-start;
 
   }
 }
