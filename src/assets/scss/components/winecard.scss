@@ -1,4 +1,11 @@
 .wine-card {
   display: flex;
   flex-direction: row;
+
+  .bg-white{
+    padding: 100px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: $color-white ;
+  }
 }
