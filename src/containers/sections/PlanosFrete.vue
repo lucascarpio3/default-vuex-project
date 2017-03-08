@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/scss/helpers/_font-size.scss">
+<link rel="stylesheet" href="../../assets/scss/helpers/_font-size.scss">
 <template>
     <!--Planos-->
     <div class="plan-freight">

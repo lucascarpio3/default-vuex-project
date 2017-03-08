@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from 'sections/Login'
 import Ajuda from 'sections/Ajuda'
-import Regulamento from 'components/Regulamento'
-import Imagens from 'components/Imagens'
-import PlanosFrete from 'components/PlanosFrete'
+import Regulamento from 'sections/Regulamento'
+import Imagens from 'sections/Imagens'
+import PlanosFrete from 'sections/PlanosFrete'
 
 Vue.use(Router)
 

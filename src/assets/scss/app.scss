@@ -19,19 +19,22 @@
 @import './helpers/button';
 @import './helpers/colors';
 // COMPONENTS
-@import "./components/login";
+
 @import './components/faq-accordion';
 @import './components/topbar';
 @import './components/menu';
-@import './components/regulation';
-@import './components/ajuda';
 @import './components/card';
 @import './components/plansfreight';
-@import './components/images';
 @import './components/winecard';
 @import './components/imagescard';
+@import './components/imagescarddesc';
 
 // SECTIONS
+@import "./components/login";
+@import './components/ajuda';
+@import './components/images';
+@import './components/regulation';
+
 
 // MODALS
 

@@ -8,4 +8,9 @@
     padding-bottom: 20px;
     background-color: $color-white ;
   }
+
+  .title-desc {
+    display: flex;
+    flex-direction: column;
+  }
 }
