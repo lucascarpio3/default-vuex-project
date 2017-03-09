@@ -10,14 +10,19 @@
         <div class="row-section-plans">
             <plan-tab-freight></plan-tab-freight>
         </div>
+        <div class="rows-plans-price pl-30">
+        <plan-tab-price></plan-tab-price>
+        </div>
     </div>
 </template>
 
 <script>
     import PlanTabFreight from 'components/PlanTabFreight'
+    import PlanTabPrice from 'components/PlanTabPrice'
     export default {
       components: {
-        PlanTabFreight
+        PlanTabFreight,
+        PlanTabPrice
       },
       data () {
         return {
