@@ -1,0 +1,21 @@
+$gutters-sizes: "0", "100", "200", "300", "400", "500", "600", "700", "800", "900";
+
+.fw {
+  &-bold {
+    font-weight: bold;
+  }
+  &-bolder {
+    font-weight: bolder;
+  }
+}
+
+@mixin generate-font-weight-gutters($sizes) {
+  @each $item in $sizes {
+    .fw-#{$item} {
+      font-weight: #{$item};
+    }
+  }
+}
+
+/* font-weight*/
+@include generate-font-weight-gutters($gutters-sizes);

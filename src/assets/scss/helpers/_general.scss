@@ -11,7 +11,7 @@
 }
 
 .full-height {
-  min-height: 90vh;
+  height: 100%;
 }
 
 .main-limiter {
@@ -26,6 +26,13 @@
 
 .v-align-bottom {
   vertical-align: bottom;
+}
+
+input{
+  background: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
 }
 
 .position {

@@ -1,16 +1,9 @@
 .wine-card {
   display: flex;
   flex-direction: row;
+}
 
-  //.bg-white{
-  //  background-color: $color-white;
-  //  padding: 30px;
-  //  width: 262px;
-  //  height: 255.5px;
-  //}
-
-  .title-desc {
-    display: flex;
-    flex-direction: column;
-  }
+.title-desc {
+  display: flex;
+  flex-direction: column;
 }

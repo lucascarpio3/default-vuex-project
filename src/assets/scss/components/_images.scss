@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: flex-start;
 
-
   .plans-delivery {
     width: 100%;
     display: flex;
@@ -21,12 +20,7 @@
     display: flex;
     flex-flow: row;
   }
-
-  //.bg-white {
-  //  background-color: $color-white;
-  //  padding: 30px;
-  //  padding-top: 45.9px;
-  //  padding-bottom: 20px;
-  //}
 }
-
+.row-plans {
+  margin-bottom: 40px;
+}
