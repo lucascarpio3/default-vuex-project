@@ -4,7 +4,7 @@ import Login from 'sections/Login'
 import Ajuda from 'sections/Ajuda'
 import Regulamento from 'sections/Regulamento'
 import Imagens from 'sections/Imagens'
-import PlanosFrete from 'sections/PlanosFrete'
+import Assinaturas from 'sections/Assinaturas'
 
 Vue.use(Router)
 
@@ -30,9 +30,9 @@ const routes = [
     component: Imagens
   },
   {
-    path: '/planos-frete',
-    name: 'Planos / Frete',
-    component: PlanosFrete
+    path: '/assinaturas',
+    name: 'Assinaturas',
+    component: Assinaturas
   },
 
   {path: '*', redirect: '/'}
