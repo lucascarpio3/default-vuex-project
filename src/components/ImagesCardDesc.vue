@@ -67,7 +67,9 @@
         </div>
         <label class="tam-max c-pewter pl-30">*Tamanho máximo de 2mb. Formato png ou jpg.</label>
     </div>
-    <button class="bkg-maroon-flush btn mt-40 btn--flat pd-18 btn-default br-15 c-white">SALVAR</button>
+        <div class="btn-save">
+            <button class="bkg-maroon-flush btn mt-40 btn--flat pd-18 btn-default br-15 c-white">SALVAR</button>
+        </div>
     </div>
 </template>
 
