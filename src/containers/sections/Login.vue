@@ -1,7 +1,7 @@
 <template>
   <div class="login center">
     <img src="../../assets/images/ipiranga_logo.png" class="login-logo mt-90" alt="Ipiranga logomarca"> <br>
-    <form class="login-form border--white--1 pd-50 br-15 mt-90 center" @submit="signin">
+    <form class="login-form border--white--1 pd-30 br-15 mt-90 center" @submit="signin">
       <span class="typo-title--15 block left">Adicione seu usuário e senha para acessar.</span>
       <label for="username" :class="['mt-40', 'block', 'left', {error: errors.username}]">Usuário</label>
       <input v-model="credentials.username" @blur="validateField" id="username" name="username" type="text"

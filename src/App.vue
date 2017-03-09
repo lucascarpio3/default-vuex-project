@@ -3,7 +3,7 @@
     <top-bar :title-page="route.name" v-if="route.name !== 'login'"></top-bar>
     <div class="container" v-if="route.name !== 'login'">
       <faq-menu></faq-menu>
-      <div class="section">
+      <div class="section mb-40">
         <router-view></router-view>
       </div>
     </div>
