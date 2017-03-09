@@ -5,7 +5,7 @@
         <i class="fa fa-picture-o mr-10" aria-hidden="true"></i> IMAGENS
       </li>
       <li id="planos-frete" :class="['menu-item', 'c-white', 'pv-20', 'pl-50', {active: route.name === 'Planos / Frete'}]">
-        <img src="../assets/images/shape.png" class="mr-10"> PLANOS / FRETE
+        <img src="../assets/images/shape.png" class="mr-10"> ASSINATURAS
       </li>
       <li id="faq" :class="['menu-item', 'c-white', 'pv-20', 'pl-50',{'active': route.name === 'FAQ'}]">
         <i class="fa fa-exclamation-triangle mr-10" aria-hidden="true"></i>FAQ
