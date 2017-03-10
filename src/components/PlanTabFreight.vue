@@ -8,11 +8,11 @@
             <p>Regras</p>
             <div class="qtd-km">
                 <p>Quantidade de Km</p>
-                <textarea name="" id="" cols="10" rows="1">100</textarea>
+                <textarea name="" id="" cols="12" rows="1">100</textarea>
             </div>
             <div class="troca-km">
                 <p>Sem troca de Km + %</p>
-                <textarea name="" id="" cols="10" rows="1">20%</textarea>
+                <textarea name="" id="" cols="12" rows="1">20%</textarea>
             </div>
         </div>
         <div class="columns-plans mr-30">
@@ -23,11 +23,11 @@
             <p>Regras</p>
             <div class="qtd-km">
                 <p>Quantidade de Km</p>
-                <textarea name="" id="" cols="10" rows="1">100</textarea>
+                <textarea name="" id="" cols="12" rows="1">100</textarea>
             </div>
             <div class="troca-km">
                 <p>Sem troca de Km + %</p>
-                <textarea name="" id="" cols="10" rows="1">20%</textarea>
+                <textarea name="" id="" cols="12" rows="1">20%</textarea>
             </div>
         </div>
         <div class="columns-plans mr-30">
@@ -38,11 +38,11 @@
             <p>Regras</p>
             <div class="qtd-km">
                 <p>Quantidade de Km</p>
-                <textarea name="" id="" cols="10" rows="1">100</textarea>
+                <textarea name="" id="" cols="12" rows="1">100</textarea>
             </div>
             <div class="troca-km">
                 <p>Sem troca de Km + %</p>
-                <textarea name="" id="" cols="10" rows="1">20%</textarea>
+                <textarea name="" id="" cols="12" rows="1">20%</textarea>
             </div>
         </div>
     </div>
