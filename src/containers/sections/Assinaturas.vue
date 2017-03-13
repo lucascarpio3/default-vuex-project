@@ -10,9 +10,9 @@
             <div class="row-section-plans">
                 <plan-tab-freight></plan-tab-freight>
             </div>
-            <div class="rows-plans-price pl-30">
-                <plan-tab-price></plan-tab-price>
-            </div>
+        </div>
+        <div class="rows-plans-price pl-30" v-if="activated === 'planos'">
+            <plan-tab-price></plan-tab-price>
         </div>
         <div class="rows-section" v-if="activated === 'personalizacao'">
             <TabLabelCustomization></TabLabelCustomization>
@@ -20,6 +20,9 @@
         </div>
         <div class="rows-section" v-if="activated === 'personalizacao'">
         <TabLabemCustomizationDown></TabLabemCustomizationDown>
+        </div>
+        <div class="rows-section" v-if="activated === 'frete'">
+            <MonthFreight></MonthFreight>
         </div>
     </div>
 </template>
@@ -30,13 +33,15 @@
   import TabLabelCustomization from 'components/TabLabelCustomization'
   import TabLabelCustomizationRight from 'components/TabLabelCustomizationRight'
   import TabLabemCustomizationDown from 'components/TabLabelCustomizationDown'
+  import MonthFreight from 'components/MonthFreight'
   export default {
     components: {
       PlanTabFreight,
       PlanTabPrice,
       TabLabelCustomization,
       TabLabelCustomizationRight,
-      TabLabemCustomizationDown
+      TabLabemCustomizationDown,
+      MonthFreight
     },
     data () {
       return {
