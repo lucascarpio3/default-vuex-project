@@ -5,6 +5,7 @@ import Ajuda from 'sections/Ajuda'
 import Regulamento from 'sections/Regulamento'
 import Imagens from 'sections/Imagens'
 import Assinaturas from 'sections/Assinaturas'
+import ImagesTeste from 'sections/TesteR'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/assinaturas',
     name: 'Assinaturas',
     component: Assinaturas
+  },
+  {
+    path: '/images-teste',
+    name: 'Images Teste',
+    component: ImagesTeste
   },
 
   {path: '*', redirect: '/'}
