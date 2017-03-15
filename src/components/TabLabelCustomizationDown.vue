@@ -17,9 +17,8 @@
             <textarea name="" id="" cols="36" rows="1">Leve</textarea><br><br>
             <label class="">Descrição</label><br>
             <textarea name="" id="" cols="36" rows="6">Vinhos jovens, frutados e fáceis de beber. Ideais para treinar o paladar e iniciar uma experiência cultural e gastronômica.</textarea><br><br>
-            <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 position--absolute">SALVAR
-            </button>
         </div>
+        <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 position--absolute">SALVAR</button>
     </div>
 </template>
 

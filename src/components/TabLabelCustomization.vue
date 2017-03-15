@@ -15,6 +15,7 @@
         <textarea name="" id="" cols="57" rows="1">Gastronômicos</textarea><br><br>
         <label class="">Descrição</label><br>
         <textarea name="" id="" cols="57" rows="6">Para acompanhar uma bela refeição. Vinhos versáteis com teor moderado de álcool. Um elemento fundamental em um vinho gastronômico é a acidez. A acidez tem a capacidade de destacar os sabores dos pratos.</textarea><br><br>
+        <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 position--absolute">SALVAR</button>
     </div>
 </template>
 

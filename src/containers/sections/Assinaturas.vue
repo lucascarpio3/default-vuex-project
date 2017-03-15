@@ -32,16 +32,20 @@
   import PlanTabPrice from 'components/PlanTabPrice'
   import TabLabelCustomization from 'components/TabLabelCustomization'
   import TabLabelCustomizationRight from 'components/TabLabelCustomizationRight'
-  import TabLabemCustomizationDown from 'components/TabLabelCustomizationDown'
+  import TabLabelCustomizationDown from 'components/TabLabelCustomizationDown'
   import MonthFreight from 'components/MonthFreight'
+  import PlanTabPriceMonthFreight from 'components/PlanTabPriceMonthFreight'
+  import Modal from 'components/Modal'
   export default {
     components: {
       PlanTabFreight,
       PlanTabPrice,
       TabLabelCustomization,
       TabLabelCustomizationRight,
-      TabLabemCustomizationDown,
-      MonthFreight
+      TabLabelCustomizationDown,
+      MonthFreight,
+      PlanTabPriceMonthFreight,
+      Modal
     },
     data () {
       return {
