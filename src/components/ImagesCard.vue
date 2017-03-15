@@ -3,14 +3,16 @@
     <div class="mb-40">
       <div class="images col-md-12">
         <section class="plans-delivery">
-          <div v-for="(data, index) in Data"  class="logo-site  mr-20 fw-500">
-            <label :id="'title-'+ data.id" class="c-maroon-flush" >{{ data.title }}</label><br><br>
-            <div class="card-white">
-              <img :src="data.image" :alt="data.title">
+          <div v-for="(data, index) in Data" class="logo-site mr-20 fw-500">
+            <div v-if="data.id < 6">
+              <label :id="'title-'+ data.id" class="c-maroon-flush">{{ data.title }}</label><br><br>
+              <div class="card-white">
+                <img :src="data.image" :alt="data.title">
+              </div>
+              <label class="label-logo c-black">{{ data.file }}</label><br>
+              <label class="label-logo c-black">{{ Medidas[index].mensage }}</label>
+              <input :id="'inputFile-' + data.id" type="file" @change="UploadImage(data.id)"/>
             </div>
-            <label class="label-logo c-black">{{ data.file }}</label><br>
-            <label class="label-logo c-black">{{ Medidas[index].mensage }}</label>
-            <input :id="'inputFile-' + data.id" type="file" @change="UploadImage(data.id)"/>
           </div>
         </section>
       </div>
@@ -46,7 +48,9 @@
 
           for (var key in jsonObj) {
             this.Data.push(jsonObj[key])
-            // console.log(this.Medidas)
+            this.Data.sort(function (a, b) {
+              return parseFloat(a.id) - parseFloat(b.id)
+            })
           }
         })
       },
@@ -98,6 +102,9 @@
           getImageApi.SaveImages(listImages).then(response => {
             console.log(response)
             console.log(response.status)
+            window.location.reload()
+          }, response => {
+            // error callback
           })
         }
       }

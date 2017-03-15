@@ -10,5 +10,13 @@ export default {
     return Vue.http.put(`${api.basePath}/images`, {
       images: data
     })
+  },
+  getWines () {
+    return Vue.http.get(`${api.basePath}/wines`)
+  },
+  SaveWines (data) {
+    return Vue.http.put(`${api.basePath}/wines`, {
+      images: data
+    })
   }
 }
