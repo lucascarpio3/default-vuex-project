@@ -16,7 +16,7 @@ export default {
   },
   SaveWines (data) {
     return Vue.http.put(`${api.basePath}/wines`, {
-      images: data
+      wines: data
     })
   }
 }

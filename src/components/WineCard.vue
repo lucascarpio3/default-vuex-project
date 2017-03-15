@@ -9,15 +9,17 @@
           </div>
           <div class="label-logo c-black pt-10">
             <label class="label-logo c-black">{{ data.file }}</label>
-            <input :id="'inputFile-' + data.id" type="file" @change="UploadImage(data.id)"/>
+            <input :id="'inputImgWine-' + data.id" type="file" @change="UploadImage(data.id)"/>
           </div>
           <div class="title-desc">
             <p class="title">Marca</p>
-            <input :id="'inputMarca-' + data.id" type="text" class="title-text" @change="UploadImage(data.id)"/>
+            <input :id="'inputMarca-' + data.id" type="text" class="title-text" @change="UploadImage(data.id)"
+                   :value="data.brand"/>
             <p class="desc">Descrição</p>
             <textarea :id="'inputDesc-' + data.id" rows="4" @change="UploadImage(data.id)" class="desc-text">{{data.description}}</textarea>
             <p class="desc">Região</p>
-            <input :id="'inputRegiao-' + data.id" type="text" class="title-text" @change="UploadImage(data.id)"/>
+            <input :id="'inputRegiao-' + data.id" type="text" class="title-text" @change="UploadImage(data.id)"
+                   :value="data.region"/>
           </div>
         </div>
       </div>
@@ -27,7 +29,7 @@
     <br>
     <div class="btn-save">
       <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-140 position--absolute"
-              @click="Save()"> SALVAR
+              @click="SaveImages()"> SALVAR
       </button>
     </div>
   </div>
@@ -63,13 +65,17 @@
       UploadImage (index) {
         var listImages = this.Images
         var isAdded = false
+        var name
+        var id = index
+        var base64
 
-        function AddListImage (id, file, title, description, image) {
+        function AddListImage (id, brand, description, file, region, image) {
           var obj = {}
           obj.id = id
-          obj.title = String(title)
+          obj.brand = String(brand)
           obj.description = String(description)
           obj.file = file
+          obj.region = String(region)
           obj.image = image
           console.log('LENGTH: ' + listImages.length)
 
@@ -99,21 +105,21 @@
         }
 
         // Read File
-        var selectedFile = document.getElementById('inputFile-' + index).files
-        var inputTitle = document.getElementById('inputTitle-' + index).value
-        var inputDes = document.getElementById('inputDesc-' + index).value
-
+        var selectedFile = document.getElementById('inputImgWine-' + index).files
+        var inputMarca = document.getElementById('inputMarca-' + index).value
+        var inputDesc = document.getElementById('inputDesc-' + index).value
+        var inputRegiao = document.getElementById('inputRegiao-' + index).value
+        // console.log(inputMarca + '\n' + inputDesc + '\n' + inputRegiao)
+        console.log(document.getElementById('inputFile-' + index))
         // Check File is not Empty
         if (selectedFile.length >= 0) {
           // Select the very first file from list
           var fileToLoad = selectedFile[0]
+          console.log(fileToLoad)
           // FileReader function for read the file.
           var fileReader = new FileReader()
-          fileReader.fileName = fileToLoad.name
 
-          var name
-          var id = index
-          var base64
+          fileReader.fileName = fileToLoad.name
 
           // Onload of file read the file content
           fileReader.onload = function (fileLoadedEvent) {
@@ -122,7 +128,8 @@
             name = fileLoadedEvent.target.fileName
             // Print data in console
             // console.log(base64 + ' \n ' + name + ' \n ' + id + ' \n ' + inputTitle + ' \n ' + inputDes)
-            AddListImage(id, name, inputTitle, inputDes, base64)
+
+            AddListImage(id, inputMarca, inputDesc, name, inputRegiao, base64)
           }
           // Convert data to base64
           fileReader.readAsDataURL(fileToLoad)
