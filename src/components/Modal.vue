@@ -15,7 +15,7 @@
                     </div>
                     <div class="modal-body">
                         <slot name="body">
-                            <div class="north-region">
+                            <div class="region">
                                 <label>Norte</label><br>
                                 <ul>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Amazonas (AM)</li>
@@ -27,8 +27,8 @@
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Amazonas (AM)</li>
                                 </ul>
                             </div>
-                            <div class="northest-region">
-                                <label>Norte</label><br>
+                            <div class="region">
+                                <label>Nordeste</label><br>
                                 <ul>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Maranhão (BA)</li>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Piauí (PI)</li>
@@ -41,7 +41,7 @@
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Bahia (BA)</li>
                                 </ul>
                             </div>
-                            <div class="midwest-region">
+                            <div class="region">
                                 <label>Centro-Oeste</label>
                                 <ul>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Mato Grosso (MT)</li>
@@ -49,7 +49,7 @@
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Goiás (GO)</li>
                                 </ul>
                             </div>
-                            <div class="southeast-region">
+                            <div class="region">
                                 <label>Sudeste</label>
                                 <ul>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">São Paulo (SP)</li>
@@ -58,7 +58,7 @@
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Minas Gerais (MG)</li>
                                 </ul>
                             </div>
-                            <div class="south-region">
+                            <div class="region">
                                 <label>Sul</label>
                                 <ul>
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Paraná (PR)</li>
@@ -66,7 +66,7 @@
                                     <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Santa Catarina (SC)</li>
                                 </ul>
                             </div>
-                            <div class="district-federal">
+                            <div class="region">
                                 <label>Distrito Federal</label>
                                 <li><input class="region-radio" type="radio" id="one" value="" v-model="picked">Distrito Federal</li>
                             </div>
