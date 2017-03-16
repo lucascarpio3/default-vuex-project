@@ -20,8 +20,7 @@ header-x {
 }
 
 .modal-container {
-  width: 800px;
-  height: 410px;
+  width: calc(100% - 400px);
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -42,11 +41,11 @@ header-x {
 
 .modal-default-button {
   float: right;
+  cursor: pointer;
 }
 
 .modal-footer {
-  margin-top: 48px;
-  margin-left: 190px;
+  text-align: center;
 }
 
 /*
@@ -86,9 +85,9 @@ li {
 }
 
 .region {
-  width: 115px;
+  width: 143px;
   display: inline-grid;
-  font-size: 8px;
+  font-size: 10px;
 
   ul {
 

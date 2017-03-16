@@ -79,9 +79,14 @@ body {
   }
 }
 
+.inline_flex{
+  display: inline-flex;
+}
+
 textarea {
   border: none;
   resize:none;
+  width: 100%;
 }
 
 
