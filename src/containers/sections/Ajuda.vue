@@ -15,30 +15,35 @@
         <faq-accordion v-for="item in items" :question="item" :key="item.id"></faq-accordion>
       </ul>
     </card>
-    <PopUpSalvar v-if="modalOpened" @closeModal="closeModal">
-    </PopUpSalvar>
-    <PopUpExcluir v-if="modalOpened" @closeModal="closeModal">
-    </PopUpExcluir>
+    <PopUp v-if="modalOpened"
+           :titleNot="modal.titleText"
+           :btnCancel="modal.cancelText"
+           :btnAction="modal.actionBtn"
+           @closeModal="closeModal">
+    </PopUp>
   </section>
 </template>
 
 <script>
   import FaqAccordion from 'components/FaqAccordion'
   import Card from 'components/Card'
-  import PopUpSalvar from 'components/PopUpSalvar'
-  import PopUpExcluir from 'components/PopUpExcluir'
+  import PopUp from '../../components/PopUp'
   import {mapState} from 'vuex'
   export default {
     components: {
       FaqAccordion,
       Card,
-      PopUpSalvar,
-      PopUpExcluir
+      PopUp
     },
     data () {
       return {
         status: '',
-        modalOpened: false
+        modalOpened: false,
+        modal: {
+          titleText: 'Tem certeza que deseja salvar as alterações?',
+          cancelText: 'CANCELAR',
+          actionBtn: 'SALVAR'
+        }
       }
     },
     methods: {
