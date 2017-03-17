@@ -1,10 +1,13 @@
 <template>
   <li @click="toggleAccordion" class="accordion-item text-wrap">
     <div :class="['accordion-title', {open: isOpen}]">
-      {{question.title}}
-      <div v-if="!isOpen" :class="['action', {open: isOpen}]">
-        <i class="fa fa-plus" aria-hidden="true"></i>
+      <div class="ellipsis-menu pl-10 pt-3 pr-10">
+        <img src="../assets/images/more.png">
       </div>
+      {{question.title}}
+      <!--<div v-if="!isOpen" :class="['action', {open: isOpen}]">-->
+        <!--<i class="fa fa-plus" aria-hidden="true"></i>-->
+      <!--</div>-->
       <div v-if="isOpen" :class="['action', {open: isOpen}]">
         <i class="fa fa-minus" aria-hidden="true"></i>
       </div>
