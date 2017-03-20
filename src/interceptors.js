@@ -25,10 +25,9 @@ var setupAPI = function () {
       appId = ''
       break
     case 'development':
-      apiHost = 'https://ipiranga.staging.gateway.zup.me/confraria/v1'
-      appId = '02bbc0f0a0e50133a173021e75abe44c'
+      apiHost = 'https://ipiranga.staging.gateway.zup.me/content-manager/v1'
+      appId = 'cd9d6d70ec7d0134bb8d021e75abe44c'
       break
-
   }
 }
 
