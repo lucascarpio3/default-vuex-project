@@ -7,7 +7,7 @@
       </div>
       <div style="float:right">
         <label>Sem troca de Km + %</label>
-        <input type="text" name="numbers" pattern="[0-9]+$" v-model="percents"/>
+        <input type="text" name="numbers" pattern="[0-9]+$" v-model="percents" :field-value.sync="removerDigits"/>
       </div>
     </div>
     <div class="inline_flex">
@@ -15,7 +15,7 @@
         <p>Valores(R$)</p>
         <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorOne"/>
         <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorTwo"/>
-        <input class="mb-10" type="text"pattern="[0-9]+$"  v-model="valorThree"/>
+        <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorThree"/>
       </div>
       <div class="pt-28">
         <br>
@@ -25,10 +25,10 @@
       </div>
     </div>
   </div>
-
 </template>
-
 <script>
+  import {numbers} from '../helpers'
+
   export default {
     data () {
       return {
@@ -58,10 +58,12 @@
         }
       },
       setPercents (newVal) {
-        console.log(newVal)
         if (newVal !== null || newVal !== '') {
           this.percents = newVal
         }
+      },
+      GetFomrData () {
+        return null
       }
     },
     props: {
@@ -92,6 +94,9 @@
       this.setPercents(this.percentage)
     },
     computed: {
+      removerDigits () {
+        numbers(this.percents)
+      },
       totalOne () {
         return (this.valorOne * this.percents)
       },

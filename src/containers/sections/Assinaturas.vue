@@ -28,7 +28,7 @@
                   :DataPlan="data"></Plan>
           </div>
           <br>
-          <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 mr-30 mt-10 pull-right">
+          <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 mr-30 mt-10 pull-right" @click="SavePlans()">
             SALVAR
           </button>
         </div>
@@ -80,9 +80,6 @@
       }
     },
     methods: {
-      totalTest (perc, valor) {
-        return perc * valor
-      },
       select (selected) {
         this.activated = selected
       },
@@ -101,6 +98,9 @@
           // console.log(this.Data[0])
           this.loadData()
         })
+      },
+      SavePlans () {
+
       }
     },
     mounted () {
