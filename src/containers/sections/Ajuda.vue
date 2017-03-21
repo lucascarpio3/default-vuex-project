@@ -1,19 +1,21 @@
 <template>
   <section class="help">
     <div class="flex-column">
-      <card title="Pergunta">
+      <card class="label-question pt-20" title="Pergunta">
         <textarea class="help-question" id="question" rows="10"></textarea>
       </card>
-      <card title="Resposta">
+      <card class="label-answer pt-20" title="Resposta">
         <textarea class="help-answer" id="answer" rows="10"></textarea>
       </card>
       <button @click="openModal()" class="btn btn--flat btn-default bkg-shiraz c-white br-15 mt-30">ADICIONAR</button>
       <button @click="openModal()" class="btn btn--flat btn-default bkg-shiraz c-white br-15 mt-30">SALVAR</button>
     </div>
-    <card title="Ajuda">
+    <card class="label-help pt-20" title="Ajuda">
+      <div class="card-body">
       <ul class="faq-questions">
         <faq-accordion v-for="item in items" :question="item" :key="item.id"></faq-accordion>
       </ul>
+      </div>
     </card>
     <PopUp v-if="modalOpened"
            :titleNot="modal.titleText"
@@ -61,3 +63,17 @@
     }
   }
 </script>
+
+<style>
+  .help-question {
+    height: 73px;
+  }
+  .help-answer {
+    width: 449.5px;
+    height: 521.5px;
+  }
+  .faq-questions {
+    padding: 20px;
+    padding-top: 10px;
+  }
+</style>
