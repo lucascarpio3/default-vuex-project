@@ -1,33 +1,37 @@
-<template xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml" type="text/x-template">
-  <div class="columns-plans mr-30 c-carnation full-width">
-    <p>Plano {{numPlan}}</p>
-    <input ref="inputPlan" type="text" v-bind:value="title" v-on:input="updateValue($event.target.value)"/>
-    <p>Descrição</p>
-    <textarea rows="3">{{description}}</textarea>
+<!--suppress XmlUnboundNsPrefix -->
+<template lang="html">
+  <div>
+    <div class="columns-plans pr-30 c-carnation full-width">
+      <p>Plano {{DataPlan.id}}</p>
+      <input ref="inputPlan" type="text" v-bind:value="DataPlan.name" v-on:input="updateValue($event.target.value)"/>
+      <p>Descrição</p>
+      <textarea rows="3">{{DataPlan.description}}</textarea>
+    </div>
+
+    <div class="rows-plans-price">
+      <Rules :km=DataPlan.groups[0].price[1].value
+             :percentage=DataPlan.percentage
+             :DataRules=DataPlan.groups
+      ></Rules>
+    </div>
+
   </div>
 </template>
 
 <script>
+  import Rules from './Rules'
 
   export default {
-    props: {
-      numPlan: {
-        type: Number,
-        default: 1
-      },
-      title: {
-        type: String,
-        default: 'Titulo'
-      },
-      description: {
-        type: String,
-        default: 'Descrição'
-      }
+    components: {
+      Rules
     },
-    methods: {
-      updateValue: function (value) {
-        this.$emit('inputPlan', value)
+    props: {
+      DataPlan: {
+        type: Object,
+        default: () => {
+        }
       }
     }
   }
 </script>
+

@@ -15,7 +15,7 @@
       <div v-if="activated === 'planos'">
         <div class="row-section-plans">
 
-          <div class="box_garrafas">
+          <div class="box_garrafas c-carnation">
             <p>Garrafas</p>
             <div v-for="(valor, index) in Garrafas">
               <input class="mb-10" type="text" :value="valor"/>
@@ -23,26 +23,11 @@
           </div>
 
           <div class="row-plans-freight pl-30">
-            <Plan v-for="(data, index) in Data[0]"
-                  v-bind:index="index"
-                  v-bind:key="data.id"
-                  :numPlan="data.id"
-                  :title="data.name"
-                  :description="data.description"></Plan>
+            <Plan v-for="data in Data[0]"
+                  :key="data.id"
+                  :DataPlan="data"></Plan>
           </div>
           <br>
-          <div class="rows-plans-price">
-            <Rules v-for="(data, index) in Data[0]"
-                   v-bind:item="data"
-                   v-bind:index="index"
-                   v-bind:key="data.id"
-                   :km=data.groups[index].price[1].value
-                   :percentage=data.percentage
-                   :teste=data.groups
-
-            ></Rules>
-          </div>
-
           <button class="bkg-maroon-flush btn btn--flat pd-18 btn-default br-15 c-white psr-50 mr-30 mt-10 pull-right">
             SALVAR
           </button>
@@ -68,7 +53,6 @@
 <script>
   import PlanTabPrice from 'components/PlanTabPrice'
   import Plan from 'components/Plans'
-  import Rules from 'components/Rules'
   import TabLabelCustomization from 'components/TabLabelCustomization'
   import TabLabelCustomizationRight from 'components/TabLabelCustomizationRight'
   import TabLabelCustomizationDown from 'components/TabLabelCustomizationDown'
@@ -81,7 +65,6 @@
     components: {
       PlanTabPrice,
       Plan,
-      Rules,
       TabLabelCustomization,
       TabLabelCustomizationRight,
       TabLabelCustomizationDown,
@@ -93,9 +76,7 @@
       return {
         activated: 'planos',
         Data: [],
-        Garrafas: [],
-        valor: [1, 2, 3],
-        testePerc: [0, 0, 0]
+        Garrafas: []
       }
     },
     methods: {
