@@ -5,6 +5,7 @@ import Ajuda from 'sections/Ajuda'
 import Regulamento from 'sections/Regulamento'
 import Imagens from 'sections/Imagens'
 import Assinaturas from 'sections/Assinaturas'
+import MyAccount from 'sections/MyAccount'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/minha-conta',
+    name: 'Minha Conta',
+    component: MyAccount
   },
   {
     path: '/ajuda',

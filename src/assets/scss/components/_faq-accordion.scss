@@ -11,12 +11,11 @@ html {
 
   td, th {
     border: 1px solid #dddddd;
-    padding: 8px;
   }
 }
 
 *, :after, :before {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body {

@@ -4,12 +4,14 @@
       <div class="ellipsis-menu pl-10 pt-3 pr-10">
         <img src="../assets/images/more.png">
       </div>
+      <div>
       {{question.title}}
-      <!--<div v-if="!isOpen" :class="['action', {open: isOpen}]">-->
-        <!--<i class="fa fa-plus" aria-hidden="true"></i>-->
-      <!--</div>-->
+      <div v-if="!isOpen" :class="['action', {open: isOpen}]">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
       <div v-if="isOpen" :class="['action', {open: isOpen}]">
         <i class="fa fa-minus" aria-hidden="true"></i>
+      </div>
       </div>
     </div>
     <div :class="['accordion-content', {open: isOpen}]">
