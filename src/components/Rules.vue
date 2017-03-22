@@ -3,19 +3,20 @@
     <div class="inline_flex">
       <div class="qtd-km">
         <label>Quantidade de Km</label>
-        <input type="text" name="numbers" pattern="[0-9]+$" v-model="km"/>
+        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' v-model="km"/>
       </div>
       <div style="float:right">
         <label>Sem troca de Km + %</label>
-        <input type="text" name="numbers" pattern="[0-9]+$" v-model="percents" :field-value.sync="removerDigits"/>
+        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' v-model="percents"/>
       </div>
     </div>
+
     <div class="inline_flex">
       <div class="mr-10">
         <p>Valores(R$)</p>
-        <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorOne"/>
-        <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorTwo"/>
-        <input class="mb-10" type="text" pattern="[0-9]+$" v-model="valorThree"/>
+        <input class="mb-10" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' v-model="valorOne"/>
+        <input class="mb-10" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' v-model="valorTwo"/>
+        <input class="mb-10" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' v-model="valorThree"/>
       </div>
       <div class="pt-28">
         <br>
@@ -27,7 +28,6 @@
   </div>
 </template>
 <script>
-  import {numbers} from '../helpers'
 
   export default {
     data () {
@@ -94,9 +94,6 @@
       this.setPercents(this.percentage)
     },
     computed: {
-      removerDigits () {
-        numbers(this.percents)
-      },
       totalOne () {
         return (this.valorOne * this.percents)
       },

@@ -18,7 +18,7 @@
           <div class="box_garrafas c-carnation">
             <p>Garrafas</p>
             <div v-for="(valor, index) in Garrafas">
-              <input class="mb-10" type="text" :value="valor"/>
+              <input class="mb-10" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' :value="valor"/>
             </div>
           </div>
 
